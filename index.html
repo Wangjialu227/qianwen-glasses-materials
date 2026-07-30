@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>千问AI眼镜 · 竞品对比素材库</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.header {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #fff;
+  padding: 20px 16px 16px;
+}
+.header h1 { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
+.header .sub { font-size: 13px; opacity: 0.8; margin-bottom: 12px; }
+
+.stats-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+  font-size: 12px;
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+.stat-chip .num { font-weight: 700; }
+.stat-chip .icon { font-size: 11px; }
+
+.mode-tag {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 2px 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.6);
+}
+
+/* ===== Search ===== */
+.search-wrap {
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #f5f6f8;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+.search-box .search-icon {
+  color: #999;
+  font-size: 14px;
+  margin-right: 6px;
+}
+.search-box input {
+  flex: 1;
+  padding: 10px 0;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+  color: #333;
+}
+.search-box input::placeholder { color: #bbb; }
+
+/* ===== Filter Tags ===== */
+.filter-wrap {
+  padding: 10px 16px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: #f5f6f8;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  user-select: none;
+}
+.filter-tag:hover { background: #e8e8f0; }
+.filter-tag.active {
+  background: #4f46e5;
+  color: #fff;
+}
+.filter-tag .count {
+  display: inline-block;
+  min-width: 18px;
+  text-align: center;
+  padding: 1px 5px;
+  background: rgba(0,0,0,0.06);
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.filter-tag.active .count {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* ===== Results Header ===== */
+.results-header {
+  padding: 14px 16px 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.results-header .count {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+.results-header .tag {
+  padding: 3px 10px;
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* ===== Card Grid ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 8px 16px 80px;
+}
+@media (max-width: 640px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Card ===== */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+.card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.card-top {
+  padding: 12px 12px 8px;
+}
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.card-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #818cf8 0%, #6366f1 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.card-name-wrap { flex: 1; min-width: 0; }
+.card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-meta {
+  font-size: 11px;
+  color: #999;
+  margin-top: 1px;
+}
+
+.card-product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+.p-tag {
+  padding: 2px 8px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #6b7280;
+}
+.p-tag.primary {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+/* ===== Image Area ===== */
+.card-image-area {
+  position: relative;
+  background: #f3f4f6;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.card-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-image-placeholder {
+  text-align: center;
+  color: #bbb;
+}
+.card-image-placeholder .img-icon {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+.card-image-placeholder .img-text {
+  font-size: 12px;
+  color: #999;
+}
+.card-image-placeholder .img-sub {
+  font-size: 11px;
+  color: #ccc;
+}
+.card-model-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 2px 8px;
+  background: #4f46e5;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ===== Card Bottom ===== */
+.card-bottom {
+  padding: 10px 12px 12px;
+}
+.card-vs-text {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.card-actions {
+  display: flex;
+  gap: 8px;
+}
+.card-actions button, .card-actions a {
+  flex: 1;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s;
+}
+.btn-copy {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #fff;
+}
+.btn-copy:hover { opacity: 0.9; }
+.btn-copy.copied {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+.btn-link {
+  background: #f3f4f6;
+  color: #666;
+}
+.btn-link:hover { background: #e5e7eb; }
+
+/* ===== Empty ===== */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: #ccc;
+}
+.empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+
+/* ===== Admin FAB ===== */
+.admin-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(79,70,229,0.35);
+  transition: transform 0.2s;
+  z-index: 99;
+}
+.admin-fab:hover { transform: scale(1.08); }
+
+/* ===== Toast ===== */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 13px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.toast.show { opacity: 1; }
+</style>
+<script src="https://beacon.cdn.qq.com/sdk/4.5.9/beacon_web.min.js"></script>
+<script>
+(function(){
+  try{
+    var beacon=new BeaconAction({
+      appkey:'0WEB06U85YBSLJNL',
+      versionCode:'1.0.0',
+      channelID:'share',
+      delay:1000,
+      sessionDuration:30*60*1000,
+      isOversea:false,
+      needReportRqdEvent:false
+    });
+    beacon.onDirectUserAction('preview_page_view',{
+      'url':location.href,
+      'referrer':document.referrer,
+      'title':document.title,
+      'sandbox_id':'3720922095114fef8a74b93087594b2d'
+    });
+  }catch(e){}
+})();
+</script></head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>千问AI眼镜 · 竞品对比素材库</h1>
+  <div class="sub">千问AI眼镜 G1 / S1 达人横测内容管理平台</div>
+  <div class="stats-bar" id="statsBar"></div>
+  <div class="mode-tag">📦 数据驱动 · JSON数据源</div>
+</div>
+
+<!-- Search -->
+<div class="search-wrap">
+  <div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput" placeholder="搜索达人昵称、对比机型、产品..." oninput="render()">
+  </div>
+</div>
+
+<!-- Filter Tags -->
+<div class="filter-wrap" id="filterWrap"></div>
+
+<!-- Results Header -->
+<div class="results-header" id="resultsHeader"></div>
+
+<!-- Card Grid -->
+<div class="card-grid" id="cardGrid"></div>
+
+<!-- Admin FAB -->
+<a class="admin-fab" href="admin.html" title="数据管理">⚙️</a>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+/* ===== IndexedDB for Images ===== */
+const DB_NAME = 'QianwenImages';
+const DB_VERSION = 1;
+let db = null;
+
+function openDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onerror = () => reject(req.error);
+    req.onsuccess = () => { db = req.result; resolve(db); };
+    req.onupgradeneeded = (e) => {
+      const d = e.target.result;
+      if (!d.objectStoreNames.contains('images')) {
+        d.createObjectStore('images', { keyPath: 'id' });
+      }
+    };
+  });
+}
+
+function saveImage(id, base64) {
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction('images', 'readwrite');
+    const store = tx.objectStore('images');
+    store.put({ id, data: base64 });
+    tx.oncomplete = resolve;
+    tx.onerror = () => reject(tx.error);
+  });
+}
+
+function getImage(id) {
+  return new Promise((resolve) => {
+    if (!db) return resolve(null);
+    const tx = db.transaction('images', 'readonly');
+    const store = tx.objectStore('images');
+    const req = store.get(id);
+    req.onsuccess = () => resolve(req.result ? req.result.data : null);
+    req.onerror = () => resolve(null);
+  });
+}
+
+/* ===== Data State ===== */
+let allData = [];
+let activeFilter = '全部';
+let imageCache = {};
+
+/* ===== Init ===== */
+const IMAGE_STORE_KEY = 'qianwen_glasses_images';
+
+async function init() {
+  await openDB();
+  try {
+    const resp = await fetch('data.json');
+    allData = await resp.json();
+  } catch(e) {
+    allData = [];
+  }
+  // Merge saved images from localStorage (admin.html shares this)
+  loadImagesFromStorage();
+  // Preload images
+  const ids = allData.filter(d => d.imageId).map(d => d.imageId);
+  await Promise.all(ids.map(async id => {
+    const data = await getImage(id);
+    if (data) imageCache[id] = data;
+  }));
+  render();
+}
+
+function loadImagesFromStorage() {
+  try {
+    const raw = localStorage.getItem(IMAGE_STORE_KEY);
+    if (!raw) return;
+    const store = JSON.parse(raw);
+    allData.forEach(d => {
+      const key = (d.nickname || '').trim() + '|' + (d.pubTime || '').trim();
+      if (store[key]) {
+        d.imageId = d.imageId || store[key].imageId;
+        d.imageData = d.imageData || store[key].imageData;
+      }
+    });
+  } catch(e) { /* ignore */ }
+}
+
+/* ===== Statistics ===== */
+function calcStats() {
+  const total = allData.length;
+  const c1v1 = allData.filter(d => d.vsClass === '1v1').length;
+  const c1v2 = allData.filter(d => d.vsClass === '1v2').length;
+  const c1vD = allData.filter(d => d.vsClass === '1v多').length;
+  const scene = allData.filter(d => ['S1考研场景','G1生活场景'].includes(d.vsClass)).length;
+  const zongce = allData.filter(d => d.vsClass === 'S1纵测').length;
+  return { total, c1v1, c1v2, c1vD, scene, zongce };
+}
+
+function renderStats() {
+  const s = calcStats();
+  document.getElementById('statsBar').innerHTML = `
+    <span class="stat-chip"><span class="icon">📊</span>素材总数 <span class="num">${s.total}</span></span>
+    <span class="stat-chip"><span class="icon">📄</span>1v1 <span class="num">${s.c1v1}</span></span>
+    <span class="stat-chip"><span class="icon">📄</span>1v2 <span class="num">${s.c1v2}</span></span>
+    <span class="stat-chip"><span class="icon">📄</span>1v多 <span class="num">${s.c1vD}</span></span>
+    <span class="stat-chip"><span class="icon">🎯</span>生活场景 <span class="num">${s.scene}</span></span>
+    <span class="stat-chip"><span class="icon">🔬</span>综合纵测 <span class="num">${s.zongce}</span></span>
+  `;
+}
+
+/* ===== Filters ===== */
+const FILTER_DEFS = [
+  { key: '全部', label: '全部' },
+  { key: '1v1', label: '1v1' },
+  { key: '1v2', label: '1v2' },
+  { key: '1v多', label: '1v多' },
+  { key: '场景', label: '生活场景' },
+  { key: '纵测', label: '综合纵测' },
+];
+
+function renderFilters() {
+  const s = calcStats();
+  const counts = {
+    '全部': s.total,
+    '1v1': s.c1v1,
+    '1v2': s.c1v2,
+    '1v多': s.c1vD,
+    '场景': s.scene,
+    '纵测': s.zongce,
+  };
+  document.getElementById('filterWrap').innerHTML = FILTER_DEFS.map(f => {
+    const active = f.key === activeFilter ? 'active' : '';
+    return `<span class="filter-tag ${active}" onclick="setFilter('${f.key}')">${f.label}<span class="count">${counts[f.key]||0}</span></span>`;
+  }).join('');
+}
+
+function setFilter(key) {
+  activeFilter = key;
+  renderFilters();
+  render();
+}
+
+/* ===== Render ===== */
+function render() {
+  renderStats();
+  renderFilters();
+
+  const search = document.getElementById('searchInput').value.toLowerCase().trim();
+
+  let filtered = allData.filter(d => {
+    if (activeFilter === '全部') return true;
+    if (activeFilter === '1v1') return d.vsClass === '1v1';
+    if (activeFilter === '1v2') return d.vsClass === '1v2';
+    if (activeFilter === '1v多') return d.vsClass === '1v多';
+    if (activeFilter === '场景') return ['S1考研场景','G1生活场景'].includes(d.vsClass);
+    if (activeFilter === '纵测') return d.vsClass === 'S1纵测';
+    return true;
+  });
+
+  if (search) {
+    filtered = filtered.filter(d =>
+      d.nickname.toLowerCase().includes(search) ||
+      (d.vsModels||'').toLowerCase().includes(search) ||
+      (d.direction||'').toLowerCase().includes(search)
+    );
+  }
+
+  // Results header
+  const vsLabel = activeFilter === '1v1' ? '千问 vs 1个竞品' :
+                  activeFilter === '1v2' ? '千问 vs 2个竞品' :
+                  activeFilter === '1v多' ? '千问 vs 多个竞品' :
+                  activeFilter === '场景' ? '场景化内容' :
+                  activeFilter === '纵测' ? '纵向评测' : '全部素材';
+  document.getElementById('resultsHeader').innerHTML = `
+    <span class="count">共 ${filtered.length} 条素材</span>
+    <span class="tag">${vsLabel}</span>
+  `;
+
+  const grid = document.getElementById('cardGrid');
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>没有匹配的素材</p></div>';
+    return;
+  }
+
+  grid.innerHTML = filtered.map((d, idx) => {
+    const firstChar = d.nickname.charAt(0);
+    const dateStr = d.pubTime || '-';
+    const product = d.direction && d.direction.includes('S1') ? '千问AI眼镜S1' :
+                    d.direction && d.direction.includes('G1') ? '千问AI眼镜G1' : '千问AI眼镜';
+    const modelTag = d.direction && d.direction.includes('S1') ? 'S1' :
+                     d.direction && d.direction.includes('G1') ? 'G1' : '';
+
+    // Extract competitor brands from vsModels
+    const competitors = extractCompetitors(d.vsModels);
+    const vsText = d.vsModels ? `${d.vsModels} · 共${competitors.length}个竞品` : (d.direction || '');
+
+    const copyText = d.copyText || (d.vsModels ? `${d.nickname} | ${d.vsModels}\n发布时间：${d.pubTime || '-'}\n阅读量：${formatNum(d.reads)} | 互动：${formatNum(d.interactions)}` : '');
+
+    const imgId = d.imageId || '';
+    const imgData = d.imageData || imageCache[imgId];
+
+    return `
+    <div class="card">
+      <div class="card-top">
+        <div class="card-author">
+          <div class="card-avatar">${firstChar}</div>
+          <div class="card-name-wrap">
+            <div class="card-name">${d.nickname}</div>
+            <div class="card-meta">${dateStr} · 图文</div>
+          </div>
+        </div>
+        <div class="card-product-tags">
+          <span class="p-tag primary">${product}</span>
+          ${competitors.slice(0, 3).map(c => `<span class="p-tag">${c}</span>`).join('')}
+        </div>
+      </div>
+      <div class="card-image-area">
+        ${imgData ? `<img src="${imgData}" alt="笔记封面">` : `
+        <div class="card-image-placeholder">
+          <div class="img-icon">🏞️</div>
+          <div class="img-text">笔记封面预览</div>
+          <div class="img-sub">（图片待补充）</div>
+        </div>`}
+        ${modelTag ? `<div class="card-model-badge">${modelTag}</div>` : ''}
+      </div>
+      <div class="card-bottom">
+        <div class="card-vs-text">${vsText}</div>
+        <div class="card-actions">
+          <button class="btn-copy" onclick="copyText(this, '${escapeJS(copyText)}')">📋 一键复制文案</button>
+          ${d.pubLink ? `<a class="btn-link" href="${d.pubLink}" target="_blank">🔗 跳转原文</a>` : '<button class="btn-link" disabled>暂无链接</button>'}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+/* ===== Helpers ===== */
+function extractCompetitors(vsModels) {
+  if (!vsModels) return [];
+  const text = vsModels.replace(/^S1|G1/g, '').replace(/vs|VS/g, ' ');
+  const brandMap = {'乐奇':1,'华为':1,'小米':1,'雷鸟':1,'Meta':1,'科大讯飞':1,'理想':1,'小度':1};
+  const found = [];
+  for (let b of Object.keys(brandMap)) {
+    if (text.includes(b)) found.push(b);
+  }
+  return found;
+}
+
+function formatNum(n) {
+  if (!n || n === 0) return '0';
+  if (n >= 10000) return (n/10000).toFixed(1) + 'w';
+  if (n >= 1000) return (n/1000).toFixed(1) + 'k';
+  return String(n);
+}
+
+function escapeJS(str) {
+  return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, '\\n').replace(/\r/g, '');
+}
+
+async function copyText(btn, text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    const original = btn.innerHTML;
+    btn.innerHTML = '✅ 已复制';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.classList.remove('copied');
+    }, 1500);
+  } catch(e) {
+    // Fallback
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    toast('已复制到剪贴板');
+  }
+}
+
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2000);
+}
+
+init();
+</script>
+</body>
+</html>
