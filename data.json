@@ -18,7 +18,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/nuonuo诗诗/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/nuonuo诗诗/01.jpeg",
+      "images/nuonuo诗诗/02.jpeg",
+      "images/nuonuo诗诗/03.jpeg",
+      "images/nuonuo诗诗/04.jpeg",
+      "images/nuonuo诗诗/05.jpeg"
+    ]
   },
   {
     "nickname": "肥象数码屋",
@@ -39,7 +46,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/肥象数码屋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/肥象数码屋/01.jpeg",
+      "images/肥象数码屋/02.jpeg",
+      "images/肥象数码屋/03.jpeg",
+      "images/肥象数码屋/04.jpeg",
+      "images/肥象数码屋/05.jpeg"
+    ]
   },
   {
     "nickname": "失眠小狗🐶",
@@ -60,7 +74,12 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/失眠小狗🐶/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/失眠小狗🐶/01.jpeg",
+      "images/失眠小狗🐶/02.jpeg",
+      "images/失眠小狗🐶/03.jpeg"
+    ]
   },
   {
     "nickname": "数码拾光记",
@@ -102,7 +121,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/小明聊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小明聊数码/01.jpeg",
+      "images/小明聊数码/02.jpeg",
+      "images/小明聊数码/03.jpeg",
+      "images/小明聊数码/04.jpeg"
+    ]
   },
   {
     "nickname": "星河漫步",
@@ -123,7 +148,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/星河漫步/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/星河漫步/01.jpeg",
+      "images/星河漫步/02.jpeg",
+      "images/星河漫步/03.jpeg",
+      "images/星河漫步/04.jpeg"
+    ]
   },
   {
     "nickname": "啊Q数码屋",
@@ -144,7 +175,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/啊Q数码屋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/啊Q数码屋/01.jpeg",
+      "images/啊Q数码屋/02.jpeg",
+      "images/啊Q数码屋/03.jpeg",
+      "images/啊Q数码屋/04.jpeg",
+      "images/啊Q数码屋/05.jpeg"
+    ]
   },
   {
     "nickname": "雪饼玩数码",
@@ -165,7 +203,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/雪饼玩数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/雪饼玩数码/01.jpeg",
+      "images/雪饼玩数码/02.jpeg",
+      "images/雪饼玩数码/03.jpeg",
+      "images/雪饼玩数码/04.jpeg"
+    ]
   },
   {
     "nickname": "小桃子说家居",
@@ -186,7 +230,14 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/小桃子说家居/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小桃子说家居/01.jpeg",
+      "images/小桃子说家居/02.jpeg",
+      "images/小桃子说家居/03.jpeg",
+      "images/小桃子说家居/04.jpeg",
+      "images/小桃子说家居/05.jpeg"
+    ]
   },
   {
     "nickname": "魔法少女小稚",
@@ -228,7 +279,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/数码莓莓子🍓/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码莓莓子🍓/01.jpeg",
+      "images/数码莓莓子🍓/02.jpeg",
+      "images/数码莓莓子🍓/03.jpeg",
+      "images/数码莓莓子🍓/04.jpeg",
+      "images/数码莓莓子🍓/05.jpeg"
+    ]
   },
   {
     "nickname": "可可豆饼干",
@@ -249,7 +307,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/可可豆饼干/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/可可豆饼干/01.jpeg",
+      "images/可可豆饼干/02.jpeg",
+      "images/可可豆饼干/03.jpeg",
+      "images/可可豆饼干/04.jpeg",
+      "images/可可豆饼干/05.jpeg",
+      "images/可可豆饼干/06.jpeg"
+    ]
   },
   {
     "nickname": "缓存冰淇淋",
@@ -270,7 +336,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/缓存冰淇淋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/缓存冰淇淋/01.jpeg",
+      "images/缓存冰淇淋/02.jpeg",
+      "images/缓存冰淇淋/03.jpeg",
+      "images/缓存冰淇淋/04.jpeg"
+    ]
   },
   {
     "nickname": "萌萌爱数码",
@@ -291,7 +363,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/萌萌爱数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/萌萌爱数码/01.jpeg",
+      "images/萌萌爱数码/02.jpeg",
+      "images/萌萌爱数码/03.jpeg",
+      "images/萌萌爱数码/04.jpeg",
+      "images/萌萌爱数码/05.jpeg"
+    ]
   },
   {
     "nickname": "小小巧克力豆",
@@ -312,7 +391,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/小小巧克力豆/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小小巧克力豆/01.jpeg",
+      "images/小小巧克力豆/02.jpeg",
+      "images/小小巧克力豆/03.jpeg",
+      "images/小小巧克力豆/04.jpeg",
+      "images/小小巧克力豆/05.jpeg",
+      "images/小小巧克力豆/06.jpeg"
+    ]
   },
   {
     "nickname": "芝麻海棠花儿",
@@ -333,7 +420,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/芝麻海棠花儿/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/芝麻海棠花儿/01.jpeg",
+      "images/芝麻海棠花儿/02.jpeg",
+      "images/芝麻海棠花儿/03.jpeg",
+      "images/芝麻海棠花儿/04.jpeg",
+      "images/芝麻海棠花儿/05.jpeg",
+      "images/芝麻海棠花儿/06.jpeg"
+    ]
   },
   {
     "nickname": "橙子的数码笔记",
@@ -354,7 +449,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/橙子的数码笔记/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/橙子的数码笔记/01.jpeg",
+      "images/橙子的数码笔记/02.jpeg",
+      "images/橙子的数码笔记/03.jpeg",
+      "images/橙子的数码笔记/04.jpeg"
+    ]
   },
   {
     "nickname": "酸辣小糯米",
@@ -375,7 +476,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/酸辣小糯米/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/酸辣小糯米/01.jpeg",
+      "images/酸辣小糯米/02.jpeg",
+      "images/酸辣小糯米/03.jpeg",
+      "images/酸辣小糯米/04.jpeg",
+      "images/酸辣小糯米/05.jpeg",
+      "images/酸辣小糯米/06.jpeg"
+    ]
   },
   {
     "nickname": "九月聊数码",
@@ -417,7 +526,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/两只小黄鸭/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/两只小黄鸭/01.jpeg",
+      "images/两只小黄鸭/02.jpeg",
+      "images/两只小黄鸭/03.jpeg",
+      "images/两只小黄鸭/04.jpeg",
+      "images/两只小黄鸭/05.jpeg",
+      "images/两只小黄鸭/06.jpeg"
+    ]
   },
   {
     "nickname": "老白聊数码",
@@ -438,7 +555,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/老白聊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/老白聊数码/01.jpeg",
+      "images/老白聊数码/02.jpeg",
+      "images/老白聊数码/03.jpeg",
+      "images/老白聊数码/04.jpeg"
+    ]
   },
   {
     "nickname": "赛Bo说明书",
@@ -459,7 +582,15 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/赛Bo说明书/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/赛Bo说明书/01.jpeg",
+      "images/赛Bo说明书/02.jpeg",
+      "images/赛Bo说明书/03.jpeg",
+      "images/赛Bo说明书/04.jpeg",
+      "images/赛Bo说明书/05.jpeg",
+      "images/赛Bo说明书/06.jpeg"
+    ]
   },
   {
     "nickname": "开心芒果干",
@@ -480,7 +611,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/开心芒果干/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/开心芒果干/01.jpeg",
+      "images/开心芒果干/02.jpeg",
+      "images/开心芒果干/03.jpeg",
+      "images/开心芒果干/04.jpeg",
+      "images/开心芒果干/05.jpeg"
+    ]
   },
   {
     "nickname": "木木的数码小宇宙💫",
@@ -522,7 +660,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/焦糖味奶糖/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/焦糖味奶糖/01.jpeg",
+      "images/焦糖味奶糖/02.jpeg",
+      "images/焦糖味奶糖/03.jpeg",
+      "images/焦糖味奶糖/04.jpeg",
+      "images/焦糖味奶糖/05.jpeg",
+      "images/焦糖味奶糖/06.jpeg"
+    ]
   },
   {
     "nickname": "薯条萌",
@@ -543,7 +689,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/薯条萌/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/薯条萌/01.jpeg",
+      "images/薯条萌/02.jpeg",
+      "images/薯条萌/03.jpeg",
+      "images/薯条萌/04.jpeg"
+    ]
   },
   {
     "nickname": "炸毛",
@@ -564,7 +716,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/炸毛/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/炸毛/01.jpeg",
+      "images/炸毛/02.jpeg",
+      "images/炸毛/03.jpeg",
+      "images/炸毛/04.jpeg",
+      "images/炸毛/05.jpeg"
+    ]
   },
   {
     "nickname": "炸毛",
@@ -584,8 +743,15 @@
     "shares": 0,
     "vsLabel": "1v2",
     "imageId": "",
-    "imageData": "images/炸毛/02.jpeg",
-    "copyText": ""
+    "imageData": "images/炸毛/01.jpeg",
+    "copyText": "",
+    "imageList": [
+      "images/炸毛/01.jpeg",
+      "images/炸毛/02.jpeg",
+      "images/炸毛/03.jpeg",
+      "images/炸毛/04.jpeg",
+      "images/炸毛/05.jpeg"
+    ]
   },
   {
     "nickname": "莫小宝贝",
@@ -606,7 +772,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/莫小宝贝/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/莫小宝贝/01.jpeg",
+      "images/莫小宝贝/02.jpeg",
+      "images/莫小宝贝/03.jpeg",
+      "images/莫小宝贝/04.jpeg",
+      "images/莫小宝贝/05.jpeg",
+      "images/莫小宝贝/06.jpeg"
+    ]
   },
   {
     "nickname": "躲雨猫",
@@ -627,7 +801,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/躲雨猫/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/躲雨猫/01.jpeg",
+      "images/躲雨猫/02.jpeg",
+      "images/躲雨猫/03.jpeg",
+      "images/躲雨猫/04.jpeg",
+      "images/躲雨猫/05.jpeg",
+      "images/躲雨猫/06.jpeg"
+    ]
   },
   {
     "nickname": "库洛米耶",
@@ -648,7 +830,15 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/库洛米耶/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/库洛米耶/01.jpeg",
+      "images/库洛米耶/02.jpeg",
+      "images/库洛米耶/03.jpeg",
+      "images/库洛米耶/04.jpeg",
+      "images/库洛米耶/05.jpeg",
+      "images/库洛米耶/06.jpeg"
+    ]
   },
   {
     "nickname": "iuovo",
@@ -690,7 +880,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/听雨拾光/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/听雨拾光/01.jpeg",
+      "images/听雨拾光/02.jpeg",
+      "images/听雨拾光/03.jpeg",
+      "images/听雨拾光/04.jpeg",
+      "images/听雨拾光/05.jpeg"
+    ]
   },
   {
     "nickname": "阿伦数码",
@@ -711,7 +908,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/阿伦数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/阿伦数码/01.jpeg",
+      "images/阿伦数码/02.jpeg",
+      "images/阿伦数码/03.jpeg",
+      "images/阿伦数码/04.jpeg"
+    ]
   },
   {
     "nickname": "星星⭐爱数码",
@@ -732,7 +935,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/星星⭐爱数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/星星⭐爱数码/01.jpeg",
+      "images/星星⭐爱数码/02.jpeg",
+      "images/星星⭐爱数码/03.jpeg",
+      "images/星星⭐爱数码/04.jpeg"
+    ]
   },
   {
     "nickname": "张张数码",
@@ -753,7 +962,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/张张数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/张张数码/01.jpeg",
+      "images/张张数码/02.jpeg",
+      "images/张张数码/03.jpeg",
+      "images/张张数码/04.jpeg"
+    ]
   },
   {
     "nickname": "Date Today",
@@ -774,7 +989,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/Date Today/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/Date Today/01.jpeg",
+      "images/Date Today/02.jpeg",
+      "images/Date Today/03.jpeg",
+      "images/Date Today/04.jpeg"
+    ]
   },
   {
     "nickname": "雾气泡",
@@ -795,7 +1016,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/雾气泡/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/雾气泡/01.jpeg",
+      "images/雾气泡/02.jpeg",
+      "images/雾气泡/03.jpeg",
+      "images/雾气泡/04.jpeg"
+    ]
   },
   {
     "nickname": "小羊数码",
@@ -816,7 +1043,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/小羊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小羊数码/01.jpeg",
+      "images/小羊数码/02.jpeg",
+      "images/小羊数码/03.jpeg",
+      "images/小羊数码/04.jpeg"
+    ]
   },
   {
     "nickname": "江洋聊数码",
@@ -837,7 +1070,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/江洋聊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/江洋聊数码/01.jpeg",
+      "images/江洋聊数码/02.jpeg",
+      "images/江洋聊数码/03.jpeg",
+      "images/江洋聊数码/04.jpeg"
+    ]
   },
   {
     "nickname": "松桠科技",
@@ -858,7 +1097,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/松桠科技/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/松桠科技/01.jpeg",
+      "images/松桠科技/02.jpeg",
+      "images/松桠科技/03.jpeg",
+      "images/松桠科技/04.jpeg"
+    ]
   },
   {
     "nickname": "数码爱好者",
@@ -900,7 +1145,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/现实数码君/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/现实数码君/01.jpeg",
+      "images/现实数码君/02.jpeg",
+      "images/现实数码君/03.jpeg",
+      "images/现实数码君/04.jpeg"
+    ]
   },
   {
     "nickname": "数码小李",
@@ -921,7 +1172,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/数码小李/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码小李/01.jpeg",
+      "images/数码小李/02.jpeg",
+      "images/数码小李/03.jpeg",
+      "images/数码小李/04.jpeg"
+    ]
   },
   {
     "nickname": "第五个月亮",
@@ -942,7 +1199,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/第五个月亮/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/第五个月亮/01.jpeg",
+      "images/第五个月亮/02.jpeg",
+      "images/第五个月亮/03.jpeg",
+      "images/第五个月亮/04.jpeg",
+      "images/第五个月亮/05.jpeg"
+    ]
   },
   {
     "nickname": "IT蓝木",
@@ -984,7 +1248,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/小奇科技说/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小奇科技说/01.jpeg",
+      "images/小奇科技说/02.jpeg",
+      "images/小奇科技说/03.jpeg",
+      "images/小奇科技说/04.jpeg"
+    ]
   },
   {
     "nickname": "抱抱说数码",
@@ -1005,7 +1275,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/抱抱说数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/抱抱说数码/01.jpeg",
+      "images/抱抱说数码/02.jpeg",
+      "images/抱抱说数码/03.jpeg",
+      "images/抱抱说数码/04.jpeg"
+    ]
   },
   {
     "nickname": "树叶讲数码",
@@ -1026,7 +1302,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/树叶讲数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/树叶讲数码/01.jpeg",
+      "images/树叶讲数码/02.jpeg",
+      "images/树叶讲数码/03.jpeg",
+      "images/树叶讲数码/04.jpeg"
+    ]
   },
   {
     "nickname": "学姐聊数码",
@@ -1068,7 +1350,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/科技小张/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/科技小张/01.jpeg",
+      "images/科技小张/02.jpeg",
+      "images/科技小张/03.jpeg",
+      "images/科技小张/04.jpeg"
+    ]
   },
   {
     "nickname": "海棠说数码",
@@ -1089,7 +1377,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/海棠说数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/海棠说数码/01.jpeg",
+      "images/海棠说数码/02.jpeg",
+      "images/海棠说数码/03.jpeg",
+      "images/海棠说数码/04.jpeg",
+      "images/海棠说数码/05.jpeg"
+    ]
   },
   {
     "nickname": "数码宝贝亚古兽",
@@ -1131,7 +1426,13 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/不1不2/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/不1不2/01.jpeg",
+      "images/不1不2/02.jpeg",
+      "images/不1不2/03.jpeg",
+      "images/不1不2/04.jpeg"
+    ]
   },
   {
     "nickname": "幸运小锦鲤",
@@ -1152,7 +1453,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/幸运小锦鲤/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/幸运小锦鲤/01.jpeg",
+      "images/幸运小锦鲤/02.jpeg",
+      "images/幸运小锦鲤/03.jpeg",
+      "images/幸运小锦鲤/04.jpeg"
+    ]
   },
   {
     "nickname": "Seven7",
@@ -1173,7 +1480,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/Seven7/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/Seven7/01.jpeg",
+      "images/Seven7/02.jpeg",
+      "images/Seven7/03.jpeg",
+      "images/Seven7/04.jpeg"
+    ]
   },
   {
     "nickname": "锅盖头科技",
@@ -1236,7 +1549,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/趣味数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/趣味数码/01.jpeg",
+      "images/趣味数码/02.jpeg",
+      "images/趣味数码/03.jpeg",
+      "images/趣味数码/04.jpeg"
+    ]
   },
   {
     "nickname": "数码大漂亮",
@@ -1278,7 +1597,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/拖沓李/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/拖沓李/01.jpeg",
+      "images/拖沓李/02.jpeg",
+      "images/拖沓李/03.jpeg",
+      "images/拖沓李/04.jpeg"
+    ]
   },
   {
     "nickname": "是小林唉",
@@ -1299,7 +1624,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/是小林唉/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/是小林唉/01.jpeg",
+      "images/是小林唉/02.jpeg",
+      "images/是小林唉/03.jpeg",
+      "images/是小林唉/04.jpeg"
+    ]
   },
   {
     "nickname": "一颗小西柚",
@@ -1320,7 +1651,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/一颗小西柚/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/一颗小西柚/01.jpeg",
+      "images/一颗小西柚/02.jpeg",
+      "images/一颗小西柚/03.jpeg",
+      "images/一颗小西柚/04.jpeg",
+      "images/一颗小西柚/05.jpeg"
+    ]
   },
   {
     "nickname": "仔仔数码屋",
@@ -1341,7 +1679,16 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/仔仔数码屋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/仔仔数码屋/01.jpeg",
+      "images/仔仔数码屋/02.jpeg",
+      "images/仔仔数码屋/03.jpeg",
+      "images/仔仔数码屋/04.jpeg",
+      "images/仔仔数码屋/05.jpeg",
+      "images/仔仔数码屋/06.jpeg",
+      "images/仔仔数码屋/07.jpeg"
+    ]
   },
   {
     "nickname": "今天也有努力工作哦",
@@ -1362,7 +1709,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/今天也有努力工作哦/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/今天也有努力工作哦/01.jpeg",
+      "images/今天也有努力工作哦/02.jpeg",
+      "images/今天也有努力工作哦/03.jpeg",
+      "images/今天也有努力工作哦/04.jpeg"
+    ]
   },
   {
     "nickname": "科技阿文",
@@ -1383,7 +1736,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/科技阿文/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/科技阿文/01.jpeg",
+      "images/科技阿文/02.jpeg",
+      "images/科技阿文/03.jpeg",
+      "images/科技阿文/04.jpeg",
+      "images/科技阿文/05.jpeg"
+    ]
   },
   {
     "nickname": "数码小白鼠",
@@ -1404,7 +1764,15 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/数码小白鼠/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码小白鼠/01.jpeg",
+      "images/数码小白鼠/02.jpeg",
+      "images/数码小白鼠/03.jpeg",
+      "images/数码小白鼠/04.jpeg",
+      "images/数码小白鼠/05.jpeg",
+      "images/数码小白鼠/06.jpeg"
+    ]
   },
   {
     "nickname": "糖糖数码记",
@@ -1446,7 +1814,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/星禾数码屋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/星禾数码屋/01.jpeg",
+      "images/星禾数码屋/02.jpeg",
+      "images/星禾数码屋/03.jpeg",
+      "images/星禾数码屋/04.jpeg",
+      "images/星禾数码屋/05.jpeg"
+    ]
   },
   {
     "nickname": "小C聊数码",
@@ -1509,7 +1884,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/小顽童数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小顽童数码/01.jpeg",
+      "images/小顽童数码/02.jpeg",
+      "images/小顽童数码/03.jpeg",
+      "images/小顽童数码/04.jpeg",
+      "images/小顽童数码/05.jpeg"
+    ]
   },
   {
     "nickname": "厂大数码",
@@ -1530,7 +1912,15 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/厂大数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/厂大数码/01.jpeg",
+      "images/厂大数码/02.jpeg",
+      "images/厂大数码/03.jpeg",
+      "images/厂大数码/04.jpeg",
+      "images/厂大数码/05.jpeg",
+      "images/厂大数码/06.jpeg"
+    ]
   },
   {
     "nickname": "丸子数码测评",
@@ -1656,7 +2046,15 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/嘉文数码前沿/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/嘉文数码前沿/01.jpeg",
+      "images/嘉文数码前沿/02.jpeg",
+      "images/嘉文数码前沿/03.jpeg",
+      "images/嘉文数码前沿/04.jpeg",
+      "images/嘉文数码前沿/05.jpeg",
+      "images/嘉文数码前沿/06.jpeg"
+    ]
   },
   {
     "nickname": "青柠酒酒",
@@ -1719,7 +2117,18 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/大阿乌爱分享（数码版/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/大阿乌爱分享（数码版/01.jpeg",
+      "images/大阿乌爱分享（数码版/02.jpeg",
+      "images/大阿乌爱分享（数码版/03.jpeg",
+      "images/大阿乌爱分享（数码版/04.jpeg",
+      "images/大阿乌爱分享（数码版/05.jpeg",
+      "images/大阿乌爱分享（数码版/06.jpeg",
+      "images/大阿乌爱分享（数码版/07.jpeg",
+      "images/大阿乌爱分享（数码版/08.jpeg",
+      "images/大阿乌爱分享（数码版/09.jpeg"
+    ]
   },
   {
     "nickname": "科技小明",
@@ -1740,7 +2149,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/科技小明/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/科技小明/01.jpeg",
+      "images/科技小明/02.jpeg",
+      "images/科技小明/03.jpeg",
+      "images/科技小明/04.jpeg",
+      "images/科技小明/05.jpeg"
+    ]
   },
   {
     "nickname": "数里行间",
@@ -1803,7 +2219,14 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/魔女月野/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/魔女月野/01.jpeg",
+      "images/魔女月野/02.jpeg",
+      "images/魔女月野/03.jpeg",
+      "images/魔女月野/04.jpeg",
+      "images/魔女月野/05.jpeg"
+    ]
   },
   {
     "nickname": "阿江谈数码",
@@ -1845,7 +2268,14 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/数码小塔/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码小塔/01.jpeg",
+      "images/数码小塔/02.jpeg",
+      "images/数码小塔/03.jpeg",
+      "images/数码小塔/04.jpeg",
+      "images/数码小塔/05.jpeg"
+    ]
   },
   {
     "nickname": "数码派研究所",
@@ -2118,7 +2548,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/数码小砖家/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码小砖家/01.jpeg",
+      "images/数码小砖家/02.jpeg",
+      "images/数码小砖家/03.jpeg",
+      "images/数码小砖家/04.jpeg"
+    ]
   },
   {
     "nickname": "数码小刘鸭",
@@ -2181,7 +2617,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/橘子（数码版/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/橘子（数码版/01.jpeg",
+      "images/橘子（数码版/02.jpeg",
+      "images/橘子（数码版/03.jpeg",
+      "images/橘子（数码版/04.jpeg"
+    ]
   },
   {
     "nickname": "VVIP",
@@ -2265,7 +2707,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/数码大砖家/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码大砖家/01.jpeg",
+      "images/数码大砖家/02.jpeg",
+      "images/数码大砖家/03.jpeg",
+      "images/数码大砖家/04.jpeg",
+      "images/数码大砖家/05.jpeg"
+    ]
   },
   {
     "nickname": "型型数码版",
@@ -2286,7 +2735,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/型型数码版/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/型型数码版/01.jpeg",
+      "images/型型数码版/02.jpeg",
+      "images/型型数码版/03.jpeg",
+      "images/型型数码版/04.jpeg",
+      "images/型型数码版/05.jpeg"
+    ]
   },
   {
     "nickname": "小咪的数码日记",
@@ -2454,7 +2910,12 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/超级玛丽/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/超级玛丽/01.jpeg",
+      "images/超级玛丽/02.jpeg",
+      "images/超级玛丽/03.jpeg"
+    ]
   },
   {
     "nickname": "我是雪碧",
@@ -2475,7 +2936,14 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/我是雪碧/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/我是雪碧/01.jpeg",
+      "images/我是雪碧/02.jpeg",
+      "images/我是雪碧/03.jpeg",
+      "images/我是雪碧/04.jpeg",
+      "images/我是雪碧/05.jpeg"
+    ]
   },
   {
     "nickname": "啊摇呀",
@@ -2496,7 +2964,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/啊摇呀/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/啊摇呀/01.jpeg",
+      "images/啊摇呀/02.jpeg",
+      "images/啊摇呀/03.jpeg",
+      "images/啊摇呀/04.jpeg"
+    ]
   },
   {
     "nickname": "温情满天下",
@@ -2538,7 +3012,14 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/浪儿/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/浪儿/01.jpeg",
+      "images/浪儿/02.jpeg",
+      "images/浪儿/03.jpeg",
+      "images/浪儿/04.jpeg",
+      "images/浪儿/05.jpeg"
+    ]
   },
   {
     "nickname": "小欧说数码",
@@ -2559,7 +3040,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/小欧说数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小欧说数码/01.jpeg",
+      "images/小欧说数码/02.jpeg",
+      "images/小欧说数码/03.jpeg",
+      "images/小欧说数码/04.jpeg"
+    ]
   },
   {
     "nickname": "花卉爱分享",
@@ -2622,7 +3109,15 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/美丽天使/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/美丽天使/01.jpeg",
+      "images/美丽天使/02.jpeg",
+      "images/美丽天使/03.jpeg",
+      "images/美丽天使/04.jpeg",
+      "images/美丽天使/05.jpeg",
+      "images/美丽天使/06.jpeg"
+    ]
   },
   {
     "nickname": "忆七七",
@@ -2643,7 +3138,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/忆七七/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/忆七七/01.jpeg",
+      "images/忆七七/02.jpeg",
+      "images/忆七七/03.jpeg",
+      "images/忆七七/04.jpeg",
+      "images/忆七七/05.jpeg"
+    ]
   },
   {
     "nickname": "笨笨",
@@ -2685,7 +3187,17 @@
     "vsLabel": "1v多",
     "imageId": "",
     "imageData": "images/淡然/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/淡然/01.jpeg",
+      "images/淡然/02.jpeg",
+      "images/淡然/03.jpeg",
+      "images/淡然/04.jpeg",
+      "images/淡然/05.jpeg",
+      "images/淡然/06.jpeg",
+      "images/淡然/07.jpeg",
+      "images/淡然/08.jpeg"
+    ]
   },
   {
     "nickname": "乐乐",
@@ -2706,7 +3218,14 @@
     "vsLabel": "1v多",
     "imageId": "",
     "imageData": "images/乐乐/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/乐乐/01.jpeg",
+      "images/乐乐/02.jpeg",
+      "images/乐乐/03.jpeg",
+      "images/乐乐/04.jpeg",
+      "images/乐乐/05.jpeg"
+    ]
   },
   {
     "nickname": "风和日丽",
@@ -2727,7 +3246,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/风和日丽/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/风和日丽/01.jpeg",
+      "images/风和日丽/02.jpeg",
+      "images/风和日丽/03.jpeg",
+      "images/风和日丽/04.jpeg",
+      "images/风和日丽/05.jpeg"
+    ]
   },
   {
     "nickname": "笑笑",
@@ -2748,7 +3274,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/笑笑/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/笑笑/01.jpeg",
+      "images/笑笑/02.jpeg",
+      "images/笑笑/03.jpeg",
+      "images/笑笑/04.jpeg",
+      "images/笑笑/05.jpeg"
+    ]
   },
   {
     "nickname": "麦香",
@@ -3252,7 +3785,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/抬头就看见你/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/抬头就看见你/01.jpeg",
+      "images/抬头就看见你/02.jpeg",
+      "images/抬头就看见你/03.jpeg",
+      "images/抬头就看见你/04.jpeg"
+    ]
   },
   {
     "nickname": "朵朵数码记",
@@ -3357,7 +3896,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/胶澳数码咖/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/胶澳数码咖/01.jpeg",
+      "images/胶澳数码咖/02.jpeg",
+      "images/胶澳数码咖/03.jpeg",
+      "images/胶澳数码咖/04.jpeg"
+    ]
   },
   {
     "nickname": "欣欣的数码小屋",
@@ -3525,7 +4070,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/李李的理想家/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/李李的理想家/01.jpeg",
+      "images/李李的理想家/02.jpeg",
+      "images/李李的理想家/03.jpeg",
+      "images/李李的理想家/04.jpeg"
+    ]
   },
   {
     "nickname": "橙子的家.",
@@ -3546,7 +4097,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/橙子的家/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/橙子的家/01.jpeg",
+      "images/橙子的家/02.jpeg",
+      "images/橙子的家/03.jpeg",
+      "images/橙子的家/04.jpeg"
+    ]
   },
   {
     "nickname": "晚睡小猫儿",
@@ -3714,7 +4271,15 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/小z/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小z/01.jpeg",
+      "images/小z/02.jpeg",
+      "images/小z/03.jpeg",
+      "images/小z/04.jpeg",
+      "images/小z/05.jpeg",
+      "images/小z/06.jpeg"
+    ]
   },
   {
     "nickname": "枫叶数码",
@@ -3756,7 +4321,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/数码拾光记/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码拾光记/01.jpeg",
+      "images/数码拾光记/02.jpeg",
+      "images/数码拾光记/03.jpeg",
+      "images/数码拾光记/04.jpeg"
+    ]
   },
   {
     "nickname": "魔法少女小稚",
@@ -3777,7 +4348,12 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/魔法少女小稚/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/魔法少女小稚/01.jpeg",
+      "images/魔法少女小稚/02.jpeg",
+      "images/魔法少女小稚/03.jpeg"
+    ]
   },
   {
     "nickname": "九月聊数码",
@@ -3798,7 +4374,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/九月聊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/九月聊数码/01.jpeg",
+      "images/九月聊数码/02.jpeg",
+      "images/九月聊数码/03.jpeg",
+      "images/九月聊数码/04.jpeg"
+    ]
   },
   {
     "nickname": "多拉爱数码",
@@ -3819,7 +4401,15 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/多拉爱数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/多拉爱数码/01.jpeg",
+      "images/多拉爱数码/02.jpeg",
+      "images/多拉爱数码/03.jpeg",
+      "images/多拉爱数码/04.jpeg",
+      "images/多拉爱数码/05.jpeg",
+      "images/多拉爱数码/06.jpeg"
+    ]
   },
   {
     "nickname": "木木的数码小宇宙💫",
@@ -3840,7 +4430,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/木木的数码小宇宙💫/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/木木的数码小宇宙💫/01.jpeg",
+      "images/木木的数码小宇宙💫/02.jpeg",
+      "images/木木的数码小宇宙💫/03.jpeg",
+      "images/木木的数码小宇宙💫/04.jpeg",
+      "images/木木的数码小宇宙💫/05.jpeg"
+    ]
   },
   {
     "nickname": "数码爱好者",
@@ -3861,7 +4458,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/数码爱好者/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码爱好者/01.jpeg",
+      "images/数码爱好者/02.jpeg",
+      "images/数码爱好者/03.jpeg",
+      "images/数码爱好者/04.jpeg"
+    ]
   },
   {
     "nickname": "IT蓝木",
@@ -3882,7 +4485,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/IT蓝木/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/IT蓝木/01.jpeg",
+      "images/IT蓝木/02.jpeg",
+      "images/IT蓝木/03.jpeg",
+      "images/IT蓝木/04.jpeg"
+    ]
   },
   {
     "nickname": "学姐聊数码",
@@ -3903,7 +4512,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/学姐聊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/学姐聊数码/01.jpeg",
+      "images/学姐聊数码/02.jpeg",
+      "images/学姐聊数码/03.jpeg",
+      "images/学姐聊数码/04.jpeg"
+    ]
   },
   {
     "nickname": "锅盖头科技",
@@ -3924,7 +4539,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/锅盖头科技/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/锅盖头科技/01.jpeg",
+      "images/锅盖头科技/02.jpeg",
+      "images/锅盖头科技/03.jpeg",
+      "images/锅盖头科技/04.jpeg",
+      "images/锅盖头科技/05.jpeg"
+    ]
   },
   {
     "nickname": "小小谈数码",
@@ -3945,7 +4567,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/小小谈数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小小谈数码/01.jpeg",
+      "images/小小谈数码/02.jpeg",
+      "images/小小谈数码/03.jpeg",
+      "images/小小谈数码/04.jpeg"
+    ]
   },
   {
     "nickname": "糖糖数码记",
@@ -3966,7 +4594,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/糖糖数码记/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/糖糖数码记/01.jpeg",
+      "images/糖糖数码记/02.jpeg",
+      "images/糖糖数码记/03.jpeg",
+      "images/糖糖数码记/04.jpeg",
+      "images/糖糖数码记/05.jpeg"
+    ]
   },
   {
     "nickname": "小C聊数码",
@@ -3987,7 +4622,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/小C聊数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/小C聊数码/01.jpeg",
+      "images/小C聊数码/02.jpeg",
+      "images/小C聊数码/03.jpeg",
+      "images/小C聊数码/04.jpeg",
+      "images/小C聊数码/05.jpeg"
+    ]
   },
   {
     "nickname": "数码晴晴子☀",
@@ -4008,7 +4650,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/数码晴晴子☀/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码晴晴子☀/01.jpeg",
+      "images/数码晴晴子☀/02.jpeg",
+      "images/数码晴晴子☀/03.jpeg",
+      "images/数码晴晴子☀/04.jpeg",
+      "images/数码晴晴子☀/05.jpeg"
+    ]
   },
   {
     "nickname": "丸子数码测评",
@@ -4029,7 +4678,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/丸子数码测评/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/丸子数码测评/01.jpeg",
+      "images/丸子数码测评/02.jpeg",
+      "images/丸子数码测评/03.jpeg",
+      "images/丸子数码测评/04.jpeg",
+      "images/丸子数码测评/05.jpeg"
+    ]
   },
   {
     "nickname": "张同学硬核数码",
@@ -4050,7 +4706,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/张同学硬核数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/张同学硬核数码/01.jpeg",
+      "images/张同学硬核数码/02.jpeg",
+      "images/张同学硬核数码/03.jpeg",
+      "images/张同学硬核数码/04.jpeg",
+      "images/张同学硬核数码/05.jpeg"
+    ]
   },
   {
     "nickname": "多多数码小丸子",
@@ -4071,7 +4734,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/多多数码小丸子/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/多多数码小丸子/01.jpeg",
+      "images/多多数码小丸子/02.jpeg",
+      "images/多多数码小丸子/03.jpeg",
+      "images/多多数码小丸子/04.jpeg",
+      "images/多多数码小丸子/05.jpeg"
+    ]
   },
   {
     "nickname": "打蛋数码",
@@ -4092,7 +4762,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/打蛋数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/打蛋数码/01.jpeg",
+      "images/打蛋数码/02.jpeg",
+      "images/打蛋数码/03.jpeg",
+      "images/打蛋数码/04.jpeg",
+      "images/打蛋数码/05.jpeg"
+    ]
   },
   {
     "nickname": "邢小帅数码酱",
@@ -4113,7 +4790,18 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/邢小帅数码酱/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/邢小帅数码酱/01.jpeg",
+      "images/邢小帅数码酱/02.jpeg",
+      "images/邢小帅数码酱/03.jpeg",
+      "images/邢小帅数码酱/04.jpeg",
+      "images/邢小帅数码酱/05.jpeg",
+      "images/邢小帅数码酱/06.jpeg",
+      "images/邢小帅数码酱/07.jpeg",
+      "images/邢小帅数码酱/08.jpeg",
+      "images/邢小帅数码酱/09.jpeg"
+    ]
   },
   {
     "nickname": "数里行间",
@@ -4134,7 +4822,13 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/数里行间/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数里行间/01.jpeg",
+      "images/数里行间/02.jpeg",
+      "images/数里行间/03.jpeg",
+      "images/数里行间/04.jpeg"
+    ]
   },
   {
     "nickname": "满电学长丶",
@@ -4155,7 +4849,13 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/满电学长丶/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/满电学长丶/01.jpeg",
+      "images/满电学长丶/02.jpeg",
+      "images/满电学长丶/03.jpeg",
+      "images/满电学长丶/04.jpeg"
+    ]
   },
   {
     "nickname": "阿江谈数码",
@@ -4176,7 +4876,13 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/阿江谈数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/阿江谈数码/01.jpeg",
+      "images/阿江谈数码/02.jpeg",
+      "images/阿江谈数码/03.jpeg",
+      "images/阿江谈数码/04.jpeg"
+    ]
   },
   {
     "nickname": "数码派研究所",
@@ -4197,7 +4903,15 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/数码派研究所/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码派研究所/01.jpeg",
+      "images/数码派研究所/02.jpeg",
+      "images/数码派研究所/03.jpeg",
+      "images/数码派研究所/04.jpeg",
+      "images/数码派研究所/05.jpeg",
+      "images/数码派研究所/06.jpeg"
+    ]
   },
   {
     "nickname": "番茄科技生活",
@@ -4218,7 +4932,14 @@
     "vsLabel": "S1纵测",
     "imageId": "",
     "imageData": "images/番茄科技生活/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/番茄科技生活/01.jpeg",
+      "images/番茄科技生活/02.jpeg",
+      "images/番茄科技生活/03.jpeg",
+      "images/番茄科技生活/04.jpeg",
+      "images/番茄科技生活/05.jpeg"
+    ]
   },
   {
     "nickname": "只吃香菜",
@@ -4239,7 +4960,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/只吃香菜/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/只吃香菜/01.jpeg",
+      "images/只吃香菜/02.jpeg",
+      "images/只吃香菜/03.jpeg",
+      "images/只吃香菜/04.jpeg",
+      "images/只吃香菜/05.jpeg"
+    ]
   },
   {
     "nickname": "数码小刘鸭",
@@ -4260,7 +4988,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/数码小刘鸭/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码小刘鸭/01.jpeg",
+      "images/数码小刘鸭/02.jpeg",
+      "images/数码小刘鸭/03.jpeg",
+      "images/数码小刘鸭/04.jpeg"
+    ]
   },
   {
     "nickname": "就要数码",
@@ -4281,7 +5015,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/就要数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/就要数码/01.jpeg",
+      "images/就要数码/02.jpeg",
+      "images/就要数码/03.jpeg",
+      "images/就要数码/04.jpeg",
+      "images/就要数码/05.jpeg"
+    ]
   },
   {
     "nickname": "🥚蛋蛋蛋挞",
@@ -4302,7 +5043,14 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/🥚蛋蛋蛋挞/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/🥚蛋蛋蛋挞/01.jpeg",
+      "images/🥚蛋蛋蛋挞/02.jpeg",
+      "images/🥚蛋蛋蛋挞/03.jpeg",
+      "images/🥚蛋蛋蛋挞/04.jpeg",
+      "images/🥚蛋蛋蛋挞/05.jpeg"
+    ]
   },
   {
     "nickname": "抹绿芽芽",
@@ -4323,7 +5071,13 @@
     "vsLabel": "1v1",
     "imageId": "",
     "imageData": "images/抹绿芽芽/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/抹绿芽芽/01.jpeg",
+      "images/抹绿芽芽/02.jpeg",
+      "images/抹绿芽芽/03.jpeg",
+      "images/抹绿芽芽/04.jpeg"
+    ]
   },
   {
     "nickname": "一只数码鹅",
@@ -4344,7 +5098,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/一只数码鹅/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/一只数码鹅/01.jpeg",
+      "images/一只数码鹅/02.jpeg",
+      "images/一只数码鹅/03.jpeg",
+      "images/一只数码鹅/04.jpeg",
+      "images/一只数码鹅/05.jpeg"
+    ]
   },
   {
     "nickname": "数码中砖家",
@@ -4365,7 +5126,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/数码中砖家/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码中砖家/01.jpeg",
+      "images/数码中砖家/02.jpeg",
+      "images/数码中砖家/03.jpeg",
+      "images/数码中砖家/04.jpeg"
+    ]
   },
   {
     "nickname": "来杯冰美式（数码版",
@@ -4386,7 +5153,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/来杯冰美式（数码版/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/来杯冰美式（数码版/01.jpeg",
+      "images/来杯冰美式（数码版/02.jpeg",
+      "images/来杯冰美式（数码版/03.jpeg",
+      "images/来杯冰美式（数码版/04.jpeg",
+      "images/来杯冰美式（数码版/05.jpeg"
+    ]
   },
   {
     "nickname": "数码小天才",
@@ -4407,7 +5181,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/数码小天才/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/数码小天才/01.jpeg",
+      "images/数码小天才/02.jpeg",
+      "images/数码小天才/03.jpeg",
+      "images/数码小天才/04.jpeg"
+    ]
   },
   {
     "nickname": "我真不叽啊",
@@ -4428,7 +5208,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/我真不叽啊/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/我真不叽啊/01.jpeg",
+      "images/我真不叽啊/02.jpeg",
+      "images/我真不叽啊/03.jpeg",
+      "images/我真不叽啊/04.jpeg",
+      "images/我真不叽啊/05.jpeg"
+    ]
   },
   {
     "nickname": "偷吃一口甜饼",
@@ -4449,7 +5236,13 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/偷吃一口甜饼/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/偷吃一口甜饼/01.jpeg",
+      "images/偷吃一口甜饼/02.jpeg",
+      "images/偷吃一口甜饼/03.jpeg",
+      "images/偷吃一口甜饼/04.jpeg"
+    ]
   },
   {
     "nickname": "温情满天下",
@@ -4470,7 +5263,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/温情满天下/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/温情满天下/01.jpeg",
+      "images/温情满天下/02.jpeg",
+      "images/温情满天下/03.jpeg",
+      "images/温情满天下/04.jpeg",
+      "images/温情满天下/05.jpeg"
+    ]
   },
   {
     "nickname": "花卉爱分享",
@@ -4491,7 +5291,13 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/花卉爱分享/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/花卉爱分享/01.jpeg",
+      "images/花卉爱分享/02.jpeg",
+      "images/花卉爱分享/03.jpeg",
+      "images/花卉爱分享/04.jpeg"
+    ]
   },
   {
     "nickname": "大白的数码屋",
@@ -4512,7 +5318,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/大白的数码屋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/大白的数码屋/01.jpeg",
+      "images/大白的数码屋/02.jpeg",
+      "images/大白的数码屋/03.jpeg",
+      "images/大白的数码屋/04.jpeg",
+      "images/大白的数码屋/05.jpeg"
+    ]
   },
   {
     "nickname": "麦香",
@@ -4533,7 +5346,14 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/麦香/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/麦香/01.jpeg",
+      "images/麦香/02.jpeg",
+      "images/麦香/03.jpeg",
+      "images/麦香/04.jpeg",
+      "images/麦香/05.jpeg"
+    ]
   },
   {
     "nickname": "白菜的数码宝贝",
@@ -4554,7 +5374,13 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/白菜的数码宝贝/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/白菜的数码宝贝/01.jpeg",
+      "images/白菜的数码宝贝/02.jpeg",
+      "images/白菜的数码宝贝/03.jpeg",
+      "images/白菜的数码宝贝/04.jpeg"
+    ]
   },
   {
     "nickname": "听雨数码笔记",
@@ -4575,7 +5401,13 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/听雨数码笔记/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/听雨数码笔记/01.jpeg",
+      "images/听雨数码笔记/02.jpeg",
+      "images/听雨数码笔记/03.jpeg",
+      "images/听雨数码笔记/04.jpeg"
+    ]
   },
   {
     "nickname": "拾光数码笔记",
@@ -4596,7 +5428,13 @@
     "vsLabel": "G1生活场景",
     "imageId": "",
     "imageData": "images/拾光数码笔记/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/拾光数码笔记/01.jpeg",
+      "images/拾光数码笔记/02.jpeg",
+      "images/拾光数码笔记/03.jpeg",
+      "images/拾光数码笔记/04.jpeg"
+    ]
   },
   {
     "nickname": "豪迈MK",
@@ -4617,7 +5455,15 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/豪迈MK/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/豪迈MK/01.jpeg",
+      "images/豪迈MK/02.jpeg",
+      "images/豪迈MK/03.jpeg",
+      "images/豪迈MK/04.jpeg",
+      "images/豪迈MK/05.jpeg",
+      "images/豪迈MK/06.jpeg"
+    ]
   },
   {
     "nickname": "朵朵数码记",
@@ -4638,7 +5484,14 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/朵朵数码记/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/朵朵数码记/01.jpeg",
+      "images/朵朵数码记/02.jpeg",
+      "images/朵朵数码记/03.jpeg",
+      "images/朵朵数码记/04.jpeg",
+      "images/朵朵数码记/05.jpeg"
+    ]
   },
   {
     "nickname": "橘势大好",
@@ -4659,7 +5512,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/橘势大好/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/橘势大好/01.jpeg",
+      "images/橘势大好/02.jpeg",
+      "images/橘势大好/03.jpeg",
+      "images/橘势大好/04.jpeg"
+    ]
   },
   {
     "nickname": "步步高升💪",
@@ -4680,7 +5539,13 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/步步高升💪/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/步步高升💪/01.jpeg",
+      "images/步步高升💪/02.jpeg",
+      "images/步步高升💪/03.jpeg",
+      "images/步步高升💪/04.jpeg"
+    ]
   },
   {
     "nickname": "希望.",
@@ -4701,7 +5566,14 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/希望/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/希望/01.jpeg",
+      "images/希望/02.jpeg",
+      "images/希望/03.jpeg",
+      "images/希望/04.jpeg",
+      "images/希望/05.jpeg"
+    ]
   },
   {
     "nickname": "欣欣的数码小屋",
@@ -4722,7 +5594,14 @@
     "vsLabel": "S1考研场景",
     "imageId": "",
     "imageData": "images/欣欣的数码小屋/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/欣欣的数码小屋/01.jpeg",
+      "images/欣欣的数码小屋/02.jpeg",
+      "images/欣欣的数码小屋/03.jpeg",
+      "images/欣欣的数码小屋/04.jpeg",
+      "images/欣欣的数码小屋/05.jpeg"
+    ]
   },
   {
     "nickname": "蜜桃说数码",
@@ -4743,7 +5622,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/蜜桃说数码/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/蜜桃说数码/01.jpeg",
+      "images/蜜桃说数码/02.jpeg",
+      "images/蜜桃说数码/03.jpeg",
+      "images/蜜桃说数码/04.jpeg"
+    ]
   },
   {
     "nickname": "大航测评",
@@ -4764,7 +5649,13 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/大航测评/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/大航测评/01.jpeg",
+      "images/大航测评/02.jpeg",
+      "images/大航测评/03.jpeg",
+      "images/大航测评/04.jpeg"
+    ]
   },
   {
     "nickname": "我选我寄几",
@@ -4785,6 +5676,12 @@
     "vsLabel": "1v2",
     "imageId": "",
     "imageData": "images/我选我寄几/01.jpeg",
-    "copyText": ""
+    "copyText": "",
+    "imageList": [
+      "images/我选我寄几/01.jpeg",
+      "images/我选我寄几/02.jpeg",
+      "images/我选我寄几/03.jpeg",
+      "images/我选我寄几/04.jpeg"
+    ]
   }
 ]
