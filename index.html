@@ -145,18 +145,12 @@ body {
   font-weight: 500;
 }
 
-/* ===== Card Grid ===== */
+/* ===== Card Grid (按达人分组,每组占一行) ===== */
 .card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   padding: 8px 16px 80px;
-}
-@media (max-width: 900px) {
-  .card-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 480px) {
-  .card-grid { grid-template-columns: 1fr; }
 }
 
 /* ===== Card ===== */
@@ -283,6 +277,143 @@ body {
   border-radius: 4px;
   font-size: 11px;
   font-weight: 600;
+}
+
+/* ===== Group Card (达人分组卡,横排展示全部图片) ===== */
+.group-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+.group-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.gc-header {
+  padding: 12px 14px 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.gc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  flex-shrink: 0;
+  max-width: 45%;
+  justify-content: flex-end;
+}
+.gc-img-num {
+  font-size: 11px;
+  color: #999;
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* 图片横排区:一行排开,超出横向滚动,图片高度自适应 */
+.gc-images {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px 12px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c7d2fe transparent;
+}
+.gc-images::-webkit-scrollbar { height: 6px; }
+.gc-images::-webkit-scrollbar-thumb { background: #c7d2fe; border-radius: 3px; }
+.gc-images::-webkit-scrollbar-track { background: transparent; }
+
+.gc-img {
+  position: relative;
+  flex-shrink: 0;
+  height: clamp(150px, 22vw, 240px);
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f3f4f6;
+  transition: transform 0.15s;
+}
+.gc-img:hover { transform: translateY(-2px); }
+/* 第一张封面略大,突出主视觉 */
+.gc-img.cover { height: clamp(180px, 27vw, 290px); }
+.gc-img img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  display: block;
+  border-radius: 8px;
+}
+.gc-cover-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(79,70,229,0.92);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+.gc-img-index {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.gc-img.empty {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+  font-size: 12px;
+  cursor: default;
+}
+.gc-img.empty:hover { transform: none; }
+
+/* 组卡底部:每篇笔记一行(对比信息+操作) */
+.gc-note-rows {
+  border-top: 1px solid #f3f4f6;
+  padding: 8px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.gc-note-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.gc-vs-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+.gc-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.gc-actions button, .gc-actions a {
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  transition: all 0.2s;
+  white-space: nowrap;
 }
 
 /* ===== Card Bottom ===== */
@@ -687,11 +818,6 @@ function render() {
                   activeFilter === '1v多' ? '千问 vs 多个竞品' :
                   activeFilter === '场景' ? '场景化内容' :
                   activeFilter === '纵测' ? '纵向评测' : '全部素材';
-  document.getElementById('resultsHeader').innerHTML = `
-    <span class="count">共 ${filtered.length} 条素材</span>
-    <span class="tag">${vsLabel}</span>
-  `;
-
   const grid = document.getElementById('cardGrid');
   if (filtered.length === 0) {
     grid.innerHTML = '<div class="empty-state"><div class="icon">🔍</div><p>没有匹配的素材</p></div>';
@@ -701,55 +827,84 @@ function render() {
   // 保存当前过滤结果，供 lightbox 图片切换导航
   window.__currentFiltered = filtered;
 
-  grid.innerHTML = filtered.map((d, idx) => {
-    const firstChar = d.nickname.charAt(0);
-    const dateStr = d.pubTime || '-';
-    const product = d.direction && d.direction.includes('S1') ? '千问AI眼镜S1' :
-                    d.direction && d.direction.includes('G1') ? '千问AI眼镜G1' : '千问AI眼镜';
-    const modelTag = d.direction && d.direction.includes('S1') ? 'S1' :
-                     d.direction && d.direction.includes('G1') ? 'G1' : '';
+  // ===== 按达人昵称分组 =====
+  const gmap = new Map();
+  filtered.forEach(d => {
+    const nick = d.nickname || '未知';
+    if (!gmap.has(nick)) gmap.set(nick, []);
+    gmap.get(nick).push(d);
+  });
+  const groups = [];
+  gmap.forEach((notes, nick) => {
+    // 收集该达人全部图片(按笔记顺序,第一张即封面)
+    const images = [];
+    notes.forEach(n => {
+      const list = (n.imageList && n.imageList.length > 0) ? n.imageList : (n.imageData ? [n.imageData] : []);
+      list.forEach(src => images.push({ src, note: n }));
+    });
+    groups.push({ nick, notes, images });
+  });
+  window.__groups = groups;
 
-    // Extract competitor brands from vsModels
-    const competitors = extractCompetitors(d.vsModels);
-    const vsText = d.vsModels ? `${d.vsModels} · 共${competitors.length}个竞品` : (d.direction || '');
+  // Results header
+  document.getElementById('resultsHeader').innerHTML = `
+    <span class="count">共 ${groups.length} 个达人 · ${filtered.length} 条素材</span>
+    <span class="tag">${vsLabel}</span>
+  `;
 
-    const copyText = d.copyText || (d.vsModels ? `${d.nickname} | ${d.vsModels}\n发布时间：${d.pubTime || '-'}\n阅读量：${formatNum(d.reads)} | 互动：${formatNum(d.interactions)}` : '');
+  // 有图的达人优先展示
+  groups.sort((a, b) => b.images.length - a.images.length);
 
-    const imgId = d.imageId || '';
-    const imgData = d.imageData || imageCache[imgId];
+  grid.innerHTML = groups.map((g, gIdx) => {
+    const firstChar = g.nick.charAt(0);
+    // 合并产品标签与竞品标签
+    const productSet = new Set();
+    const comps = [];
+    g.notes.forEach(n => {
+      productSet.add(n.direction && n.direction.includes('S1') ? '千问AI眼镜S1' :
+                     n.direction && n.direction.includes('G1') ? '千问AI眼镜G1' : '千问AI眼镜');
+      extractCompetitors(n.vsModels).forEach(c => { if (!comps.includes(c)) comps.push(c); });
+    });
+    const tagHtml = [...productSet].map(p => `<span class="p-tag primary">${p}</span>`).join('') +
+                    comps.slice(0, 3).map(c => `<span class="p-tag">${c}</span>`).join('');
+
+    // 图片横排区
+    const imgHtml = g.images.length > 0
+      ? `<div class="gc-images">${g.images.map((img, i) => `
+          <div class="gc-img${i === 0 ? ' cover' : ''}" onclick="openGroupLightbox(${gIdx}, ${i})" title="${img.note.pubTime || ''}">
+            <img src="${img.src}" loading="lazy" alt="${g.nick} 第${i + 1}张">
+            ${i === 0 ? '<span class="gc-cover-badge">封面</span>' : ''}
+            ${g.images.length > 1 ? `<span class="gc-img-index">${i + 1}</span>` : ''}
+          </div>`).join('')}</div>`
+      : `<div class="gc-images"><div class="gc-img empty">暂无图片</div></div>`;
+
+    // 组卡底部:每篇笔记一行
+    const noteRows = g.notes.map(n => {
+      const vsText = n.vsModels ? `${n.vsModels} · 共${extractCompetitors(n.vsModels).length}个竞品` : (n.direction || '');
+      const copyText = n.copyText || (n.vsModels ? `${n.nickname} | ${n.vsModels}\n发布时间：${n.pubTime || '-'}\n阅读量：${formatNum(n.reads)} | 互动：${formatNum(n.interactions)}` : '');
+      return `
+      <div class="gc-note-row">
+        <span class="gc-vs-text">${vsText}</span>
+        <div class="gc-actions">
+          <button class="btn-copy" onclick="copyText(this, '${escapeJS(copyText)}')">📋 复制文案</button>
+          ${n.pubLink ? `<a class="btn-link" href="${n.pubLink}" target="_blank">🔗 原文</a>` : '<button class="btn-link" disabled>无链接</button>'}
+        </div>
+      </div>`;
+    }).join('');
 
     return `
-    <div class="card">
-      <div class="card-top">
-        <div class="card-author">
-          <div class="card-avatar">${firstChar}</div>
-          <div class="card-name-wrap">
-            <div class="card-name">${d.nickname}</div>
-            <div class="card-meta">${dateStr} · 图文</div>
-          </div>
+    <div class="group-card">
+      <div class="gc-header">
+        <div class="card-avatar">${firstChar}</div>
+        <div class="card-name-wrap">
+          <div class="card-name">${g.nick}</div>
+          <div class="card-meta">${g.notes.length} 篇笔记 · ${g.images.length} 张图${g.images.length ? ' · 点击图片预览全部' : ''}</div>
         </div>
-        <div class="card-product-tags">
-          <span class="p-tag primary">${product}</span>
-          ${competitors.slice(0, 3).map(c => `<span class="p-tag">${c}</span>`).join('')}
-        </div>
+        <span class="gc-img-num">${g.images.length ? g.images.length + '图' : ''}</span>
+        <div class="gc-tags">${tagHtml}</div>
       </div>
-      <div class="card-image-area" ${imgData ? `onclick="openLightbox(${idx})"` : ''}>
-        ${imgData ? `<img src="${imgData}" alt="笔记封面">` : `
-        <div class="card-image-placeholder">
-          <div class="img-icon">🏞️</div>
-          <div class="img-text">笔记封面预览</div>
-          <div class="img-sub">（图片待补充）</div>
-        </div>`}
-        ${modelTag ? `<div class="card-model-badge">${modelTag}</div>` : ''}
-        ${imgData ? `<div class="card-image-hint">🔍 点击预览</div>` : ''}
-      </div>
-      <div class="card-bottom">
-        <div class="card-vs-text">${vsText}</div>
-        <div class="card-actions">
-          <button class="btn-copy" onclick="copyText(this, '${escapeJS(copyText)}')">📋 一键复制文案</button>
-          ${d.pubLink ? `<a class="btn-link" href="${d.pubLink}" target="_blank">🔗 跳转原文</a>` : '<button class="btn-link" disabled>暂无链接</button>'}
-        </div>
-      </div>
+      ${imgHtml}
+      <div class="gc-note-rows">${noteRows}</div>
     </div>`;
   }).join('');
 }
@@ -811,6 +966,19 @@ let lbImages = [];   // 当前预览的图片列表
 let lbMeta = {};     // 当前预览的卡片元信息
 let lbIndex = 0;
 
+/* 组模式:点击某达人任意一张图,预览该达人全部图片 */
+function openGroupLightbox(gIdx, imgIdx) {
+  const groups = window.__groups || [];
+  const g = groups[gIdx];
+  if (!g || !g.images || g.images.length === 0) return;
+  lbImages = g.images.map(x => x.src);
+  lbMeta = { nickname: g.nick, sub: `${g.nick} · ${g.notes.length} 篇笔记 · ${g.images.length} 张图` };
+  lbIndex = imgIdx || 0;
+  showLightboxItem();
+  document.getElementById('lightbox').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
 function openLightbox(idx) {
   const list = window.__currentFiltered || [];
   const item = list[idx];
@@ -831,10 +999,15 @@ function showLightboxItem() {
   const nameEl = document.getElementById('lbName');
   nameEl.textContent = lbMeta.nickname || '';
   const subEl = document.getElementById('lbSub');
-  const product = lbMeta.direction && lbMeta.direction.includes('S1') ? '千问AI眼镜S1' :
-                  lbMeta.direction && lbMeta.direction.includes('G1') ? '千问AI眼镜G1' : '';
-  const vs = lbMeta.vsModels || lbMeta.direction || '';
-  subEl.textContent = [product, vs, lbMeta.pubTime ? lbMeta.pubTime : ''].filter(Boolean).join(' · ');
+  if (lbMeta.sub) {
+    // 组模式:直接显示已拼好的副标题
+    subEl.textContent = lbMeta.sub;
+  } else {
+    const product = lbMeta.direction && lbMeta.direction.includes('S1') ? '千问AI眼镜S1' :
+                    lbMeta.direction && lbMeta.direction.includes('G1') ? '千问AI眼镜G1' : '';
+    const vs = lbMeta.vsModels || lbMeta.direction || '';
+    subEl.textContent = [product, vs, lbMeta.pubTime ? lbMeta.pubTime : ''].filter(Boolean).join(' · ');
+  }
   const counter = document.getElementById('lbCounter');
   counter.textContent = `${lbIndex + 1} / ${lbImages.length}`;
   // 更新 nav 可用状态
