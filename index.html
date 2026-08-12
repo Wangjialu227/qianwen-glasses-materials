@@ -836,11 +836,14 @@ function render() {
   });
   const groups = [];
   gmap.forEach((notes, nick) => {
-    // 收集该达人全部图片(按笔记顺序,第一张即封面)
+    // 收集该达人全部图片(按笔记顺序,第一张即封面;同路径自动去重)
     const images = [];
+    const seenImg = new Set();
     notes.forEach(n => {
       const list = (n.imageList && n.imageList.length > 0) ? n.imageList : (n.imageData ? [n.imageData] : []);
-      list.forEach(src => images.push({ src, note: n }));
+      list.forEach(src => {
+        if (!seenImg.has(src)) { seenImg.add(src); images.push({ src, note: n }); }
+      });
     });
     groups.push({ nick, notes, images });
   });
