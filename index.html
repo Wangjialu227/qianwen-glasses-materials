@@ -566,7 +566,8 @@ const IMAGE_STORE_KEY = 'qianwen_glasses_images';
 async function init() {
   await openDB();
   try {
-    const resp = await fetch('data.json');
+    // 加时间戳绕过浏览器缓存，确保每次拿到最新数据
+    const resp = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
     allData = await resp.json();
   } catch(e) {
     allData = [];
