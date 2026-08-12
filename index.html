@@ -254,6 +254,17 @@ body {
   transition: opacity 0.2s;
   pointer-events: none;
 }
+.card-img-count {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  pointer-events: none;
+}
 .card-image-placeholder {
   text-align: center;
   color: #bbb;
@@ -399,6 +410,29 @@ body {
 }
 .lightbox-meta .lb-name { font-weight: 600; margin-bottom: 4px; }
 .lightbox-meta .lb-sub { font-size: 12px; opacity: 0.7; }
+.lightbox-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  max-width: 92%;
+  overflow-x: auto;
+  padding: 6px 2px;
+}
+.lightbox-thumbs img {
+  width: 52px;
+  height: 52px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.5;
+  border: 2px solid transparent;
+  flex: none;
+  transition: opacity 0.2s, border-color 0.2s;
+  max-height: 52px;
+  box-shadow: none;
+  background: #222;
+}
+.lightbox-thumbs img.active { opacity: 1; border-color: #fff; }
 .lightbox-close {
   position: absolute;
   top: 16px;
@@ -512,6 +546,7 @@ body {
     <div class="lb-sub" id="lbSub"></div>
   </div>
   <div class="lightbox-counter" id="lbCounter"></div>
+  <div class="lightbox-thumbs" id="lbThumbs"></div>
 </div>
 
 <script>
@@ -566,8 +601,7 @@ const IMAGE_STORE_KEY = 'qianwen_glasses_images';
 async function init() {
   await openDB();
   try {
-    // 加时间戳绕过浏览器缓存，确保每次拿到最新数据
-    const resp = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
+    const resp = await fetch('data.json');
     allData = await resp.json();
   } catch(e) {
     allData = [];
@@ -714,6 +748,7 @@ function render() {
 
     const imgId = d.imageId || '';
     const imgData = d.imageData || imageCache[imgId];
+    const imgCount = (d.imageList && d.imageList.length) || (imgData ? 1 : 0);
 
     return `
     <div class="card">
@@ -738,7 +773,8 @@ function render() {
           <div class="img-sub">（图片待补充）</div>
         </div>`}
         ${modelTag ? `<div class="card-model-badge">${modelTag}</div>` : ''}
-        ${imgData ? `<div class="card-image-hint">🔍 点击预览</div>` : ''}
+        ${imgCount > 1 ? `<div class="card-img-count">📷 ${imgCount}张</div>` : ''}
+        ${imgData ? `<div class="card-image-hint">${imgCount > 1 ? `🔍 点击查看全部 ${imgCount} 张` : '🔍 点击预览'}</div>` : ''}
       </div>
       <div class="card-bottom">
         <div class="card-vs-text">${vsText}</div>
@@ -834,9 +870,26 @@ function showLightboxItem() {
   subEl.textContent = [product, vs, lbMeta.pubTime ? lbMeta.pubTime : ''].filter(Boolean).join(' · ');
   const counter = document.getElementById('lbCounter');
   counter.textContent = `${lbIndex + 1} / ${lbImages.length}`;
+  // 缩略图条
+  const thumbs = document.getElementById('lbThumbs');
+  if (lbImages.length > 1) {
+    thumbs.innerHTML = lbImages.map((src, i) =>
+      `<img src="${src}" class="${i === lbIndex ? 'active' : ''}" onclick="goLightbox(${i})" alt="第${i+1}张">`
+    ).join('');
+    thumbs.style.display = 'flex';
+  } else {
+    thumbs.innerHTML = '';
+    thumbs.style.display = 'none';
+  }
   // 更新 nav 可用状态
   document.querySelector('.lightbox-prev').style.opacity = lbImages.length > 1 ? 1 : 0.3;
   document.querySelector('.lightbox-next').style.opacity = lbImages.length > 1 ? 1 : 0.3;
+}
+
+function goLightbox(i) {
+  if (i < 0 || i >= lbImages.length) return;
+  lbIndex = i;
+  showLightboxItem();
 }
 
 function closeLightbox() {
