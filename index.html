@@ -399,6 +399,15 @@ body {
   font-size: 12px;
   color: #6b7280;
 }
+.gc-status {
+  margin-left: 6px;
+  padding: 1px 6px;
+  background: #fef3c7;
+  color: #92400e;
+  border-radius: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+}
 .gc-actions {
   display: flex;
   gap: 6px;
@@ -884,12 +893,17 @@ function render() {
     // 组卡底部:每篇笔记一行
     const noteRows = g.notes.map(n => {
       const vsText = n.vsModels ? `${n.vsModels} · 共${extractCompetitors(n.vsModels).length}个竞品` : (n.direction || '');
-      const copyText = n.copyText || (n.vsModels ? `${n.nickname} | ${n.vsModels}\n发布时间：${n.pubTime || '-'}\n阅读量：${formatNum(n.reads)} | 互动：${formatNum(n.interactions)}` : '');
+      const hasCopy = n.copyText && n.copyText.trim().length > 0;
+      const copyText = hasCopy ? n.copyText : '';
+      // 无真实文案的笔记:按钮禁用并明确提示"暂无文案"
+      const copyBtn = hasCopy
+        ? `<button class="btn-copy" onclick="copyText(this, '${escapeJS(copyText)}')">📋 复制文案</button>`
+        : `<button class="btn-copy" disabled title="该笔记未发布或无正文，暂无文案可复制" style="background:#e5e7eb;color:#9ca3af;cursor:not-allowed">📋 暂无文案</button>`;
       return `
       <div class="gc-note-row">
-        <span class="gc-vs-text">${vsText}</span>
+        <span class="gc-vs-text">${vsText}${n.status ? `<span class="gc-status">${n.status}</span>` : ''}</span>
         <div class="gc-actions">
-          <button class="btn-copy" onclick="copyText(this, '${escapeJS(copyText)}')">📋 复制文案</button>
+          ${copyBtn}
           ${n.pubLink ? `<a class="btn-link" href="${n.pubLink}" target="_blank">🔗 原文</a>` : '<button class="btn-link" disabled>无链接</button>'}
         </div>
       </div>`;
