@@ -589,7 +589,7 @@ body {
   letter-spacing: 1px;
 }
 </style>
-<script src="https://beacon.cdn.qq.com/sdk/4.5.9/beacon_web.min.js"></script>
+<script src="https://beacon.cdn.qq.com/sdk/4.5.9/beacon_web.min.js" defer></script>
 <script>
 (function(){
   try{
@@ -709,12 +709,20 @@ const IMAGE_STORE_KEY = 'qianwen_glasses_images';
 async function init() {
   await openDB();
   try {
-    // 加时间戳绕过浏览器缓存，确保每次拿到最新数据
-    const resp = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
-    allData = await resp.json();
+    // no-cache:每次走条件请求——数据没变(GitHub返回304)用浏览器缓存,秒开;变了再拉新数据
+    const resp = await fetch('data.json?v=2', { cache: 'no-cache' });
+    if (resp.ok) allData = await resp.json();
+    else allData = [];
   } catch(e) {
-    allData = [];
+    // 网络失败时用 localStorage 兜底(上次成功的数据),避免白屏
+    try {
+      const raw = localStorage.getItem('qianwen_data_fallback');
+      if (raw) allData = JSON.parse(raw);
+    } catch(e2) {}
+    if (!allData.length) allData = [];
   }
+  // 缓存本次成功数据到 localStorage,供下次离线兜底
+  try { localStorage.setItem('qianwen_data_fallback', JSON.stringify(allData)); } catch(e) {}
   // Merge saved images from localStorage (admin.html shares this)
   loadImagesFromStorage();
   // Preload images
@@ -846,12 +854,13 @@ function render() {
   const groups = [];
   gmap.forEach((notes, nick) => {
     // 收集该达人全部图片(按笔记顺序,第一张即封面;同路径自动去重)
+    // src 存原图路径用于预览, thumb 存缩略图路径用于网格
     const images = [];
     const seenImg = new Set();
     notes.forEach(n => {
       const list = (n.imageList && n.imageList.length > 0) ? n.imageList : (n.imageData ? [n.imageData] : []);
       list.forEach(src => {
-        if (!seenImg.has(src)) { seenImg.add(src); images.push({ src, note: n }); }
+        if (!seenImg.has(src)) { seenImg.add(src); images.push({ src, thumb: src.replace(/^images\//, 'thumbs/'), note: n }); }
       });
     });
     groups.push({ nick, notes, images });
@@ -880,11 +889,12 @@ function render() {
     const tagHtml = [...productSet].map(p => `<span class="p-tag primary">${p}</span>`).join('') +
                     comps.slice(0, 3).map(c => `<span class="p-tag">${c}</span>`).join('');
 
-    // 图片横排区
+    // 图片横排区：网格显示缩略图，点击预览才加载原图
+    const thumbOf = (src) => src.replace(/^images\//, 'thumbs/');
     const imgHtml = g.images.length > 0
       ? `<div class="gc-images">${g.images.map((img, i) => `
           <div class="gc-img${i === 0 ? ' cover' : ''}" onclick="openGroupLightbox(${gIdx}, ${i})" title="${img.note.pubTime || ''}">
-            <img src="${img.src}" loading="lazy" alt="${g.nick} 第${i + 1}张">
+            <img src="${thumbOf(img.src)}" loading="lazy" decoding="async" alt="${g.nick} 第${i + 1}张">
             ${i === 0 ? '<span class="gc-cover-badge">封面</span>' : ''}
             ${g.images.length > 1 ? `<span class="gc-img-index">${i + 1}</span>` : ''}
           </div>`).join('')}</div>`
@@ -988,7 +998,7 @@ function openGroupLightbox(gIdx, imgIdx) {
   const groups = window.__groups || [];
   const g = groups[gIdx];
   if (!g || !g.images || g.images.length === 0) return;
-  lbImages = g.images.map(x => x.src);
+  lbImages = g.images.map(x => x.src);  // 预览用原图
   lbMeta = { nickname: g.nick, sub: `${g.nick} · ${g.notes.length} 篇笔记 · ${g.images.length} 张图` };
   lbIndex = imgIdx || 0;
   showLightboxItem();
