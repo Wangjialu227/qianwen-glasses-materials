@@ -710,7 +710,7 @@ async function init() {
   await openDB();
   try {
     // no-cache:每次走条件请求——数据没变(GitHub返回304)用浏览器缓存,秒开;变了再拉新数据
-    const resp = await fetch('data.json?v=2', { cache: 'no-cache' });
+    const resp = await fetch('data.json?v=3', { cache: 'no-cache' });
     if (resp.ok) allData = await resp.json();
     else allData = [];
   } catch(e) {
