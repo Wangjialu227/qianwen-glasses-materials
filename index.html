@@ -989,9 +989,12 @@ function toast(msg) {
 }
 
 /* ===== Lightbox Controls ===== */
-let lbImages = [];   // 当前预览的图片列表
+let lbImages = [];   // 当前预览的图片列表(原图)
+let lbThumbs = [];   // 对应缩略图列表(秒显占位)
 let lbMeta = {};     // 当前预览的卡片元信息
 let lbIndex = 0;
+
+function thumbOf(src) { return src.replace(/^images\//, 'thumbs/'); }
 
 /* 组模式:点击某达人任意一张图,预览该达人全部图片 */
 function openGroupLightbox(gIdx, imgIdx) {
@@ -999,6 +1002,7 @@ function openGroupLightbox(gIdx, imgIdx) {
   const g = groups[gIdx];
   if (!g || !g.images || g.images.length === 0) return;
   lbImages = g.images.map(x => x.src);  // 预览用原图
+  lbThumbs = g.images.map(x => x.thumb || thumbOf(x.src));
   lbMeta = { nickname: g.nick, sub: `${g.nick} · ${g.notes.length} 篇笔记 · ${g.images.length} 张图` };
   lbIndex = imgIdx || 0;
   showLightboxItem();
@@ -1013,6 +1017,7 @@ function openLightbox(idx) {
   // 该笔记自己的全部图片（有 imageList 用 imageList，否则用封面）
   lbImages = (item.imageList && item.imageList.length > 0) ? item.imageList : (item.imageData ? [item.imageData] : []);
   if (lbImages.length === 0) return;
+  lbThumbs = lbImages.map(thumbOf);
   lbMeta = item;
   lbIndex = 0;
   showLightboxItem();
@@ -1022,7 +1027,18 @@ function openLightbox(idx) {
 
 function showLightboxItem() {
   const img = document.getElementById('lightboxImg');
-  img.src = lbImages[lbIndex];
+  const fullSrc = lbImages[lbIndex];
+  const thumbSrc = lbThumbs[lbIndex] || thumbOf(fullSrc);
+  // 先显示缩略图(秒出),再后台加载原图,加载成功才替换为高清
+  if (img.getAttribute('data-loading') === fullSrc) return;  // 同图加载中
+  img.setAttribute('data-loading', fullSrc);
+  const pre = new Image();
+  pre.onload = () => {
+    if (lbImages[lbIndex] === fullSrc) { img.src = fullSrc; img.removeAttribute('data-loading'); }
+  };
+  pre.onerror = () => img.removeAttribute('data-loading');
+  pre.src = fullSrc;
+  img.src = thumbSrc;
   const nameEl = document.getElementById('lbName');
   nameEl.textContent = lbMeta.nickname || '';
   const subEl = document.getElementById('lbSub');
